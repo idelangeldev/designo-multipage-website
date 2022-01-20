@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; // 1rem = 10px; 10px/16px= 62.5%
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: $grid-width;
+  padding: 0 3.8rem;
+  margin: 0 auto;
+
+  &--alt {
+    @media only screen and (max-width: $bp-small) {
+      padding: 0;
+    }
+  }
+}

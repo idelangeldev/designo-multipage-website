@@ -1,0 +1,45 @@
+body {
+  font-family: "Jost", sans-serif;
+  font-size: $body-font-size;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.625;
+  color: $color-grey-dark;
+}
+
+.heading-1,
+.heading-2,
+.heading-3 {
+  font-weight: 500;
+}
+
+.heading-1 {
+  color: $color-white;
+  font-size: $heading-1-font-size;
+  line-height: 1;
+  margin-bottom: 2.5rem;
+}
+
+.heading-2 {
+  font-size: $heading-2-font-size;
+  letter-spacing: 2px;
+  line-height: 1.2;
+
+  &--white {
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+  }
+  &--primary {
+    color: $color-primary;
+    margin-bottom: 3rem;
+  }
+}
+
+.heading-3 {
+  color: $color-primary;
+  font-size: $heading-3-font-size;
+  letter-spacing: 5px;
+  line-height: 1.3;
+  margin-bottom: 2.4rem;
+}
