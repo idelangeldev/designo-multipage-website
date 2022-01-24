@@ -23,25 +23,163 @@
     <title>Frontend Mentor | Designo Agency Website Challenge</title>
   </head>
   <body>
-    <div class="container">
-      Our Company Locations Contact Award-winning custom designs and digital
-      branding solutions With over 10 years in the industry, we are experienced
-      in creating fully responsive websites, app design, and engaging brand
-      experiences. Find out more about our services. Learn more Web Design View
-      Projects App Design View Projects Graphic Design View Projects Passionate
-      Each project starts with an in-depth brand research to ensure we only
-      create products that serve a purpose. We merge art, design, and technology
-      into exciting new solutions. Resourceful Everything that we do has a
-      strategic purpose. We use an agile approach in all of our projects and
-      value customer collaboration. It guarantees superior results that fulfill
-      our clients’ needs. Friendly We are a group of enthusiastic folks who know
-      how to put people first. Our success depends on our customers, and we
-      strive to give them the best experience a company can provide. Let’s talk
-      about your project Ready to take it to the next level? Contact us today
-      and find out how our expertise can help your business grow. Get in touch
-      Our company Locations Contact Designo Central Office 3886 Wellington
-      Street Toronto, Ontario M9C 3J5 Contact Us (Central Office) P : +1
-      253-863-8967 M : contact@designo.co
-    </div>
+    <header class="header">
+      <div class="header__container">
+        <a href="#">
+          <img
+            src="assets/shared/desktop/logo-dark.png"
+            alt="Designo logo"
+            class="header__logo"
+          />
+        </a>
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Our Company</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Locations</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="mobile-nav__btn">
+          <img
+            src="assets/shared/mobile/icon-hamburger.svg"
+            alt=""
+            class="mobile-nav__icon mobile-nav__icon--hamburger"
+          />
+          <img
+            src="assets/shared/mobile/icon-close.svg"
+            alt=""
+            class="mobile-nav__icon mobile-nav__icon--close"
+          />
+        </button>
+      </div>
+    </header>
+
+    <main class="main-grid">
+      <section class="section-hero">
+        <!-- <div class="container"> -->
+        <div class="hero grid no-x-gap">
+          <div class="hero__text-box">
+            <h1 class="heading-1">
+              Award-winning custom designs and digital branding solutions
+            </h1>
+            <p class="paragraph paragraph--white md-sm">
+              With over 10 years in the industry, we are experienced in creating
+              fully responsive websites, app design, and engaging brand
+              experiences. Find out more about our services.
+            </p>
+            <a href="#" class="btn btn--secondary">Learn more</a>
+          </div>
+          <div class="hero__img-box"></div>
+        </div>
+        <!-- </div> -->
+      </section>
+
+      <section class="section-projects">
+        <!-- WEB DESIGN -->
+        <div class="projects__web">
+          <h2 class="heading-2 heading-2--white">Web Design</h2>
+          <p class="subheading">
+            View Projects
+            <img
+              src="assets/shared/desktop/icon-right-arrow.svg"
+              alt=""
+              class="projects__icon"
+            />
+          </p>
+          <a href="#" class="projects__link"></a>
+        </div>
+
+        <!-- APP DESIGN -->
+        <div class="projects__app">
+          dd
+          <h2 class="heading-2 heading-2--white">App Design</h2>
+          <p class="subheading">
+            View Projects
+            <img
+              src="assets/shared/desktop/icon-right-arrow.svg"
+              alt=""
+              class="projects__icon"
+            />
+          </p>
+          <a href="#" class="projects__link"></a>
+        </div>
+
+        <!-- GRAPHIC DESIGN -->
+        <div class="projects__design">
+          dd
+          <h2 class="heading-2 heading-2--white">Graphic Design</h2>
+          <p class="subheading">
+            View Projects
+            <img
+              src="assets/shared/desktop/icon-right-arrow.svg"
+              alt=""
+              class="projects__icon"
+            />
+          </p>
+          <a href="#" class="projects__link"></a>
+        </div>
+      </section>
+
+      <section class="section-features">
+        <!-- PASSIONATE -->
+        <div class="feature">
+          <img
+            src="assets/home/desktop/illustration-passionate.svg"
+            alt="Someone passionate"
+            class="feature__img"
+          />
+          <h3 class="heading-3 heading-3--dark">Passionate</h3>
+          <p class="paragraph px-xsm">
+            Each project starts with an in-depth brand research to ensure we
+            only create products that serve a purpose. We merge art, design, and
+            technology into exciting new solutions.
+          </p>
+        </div>
+
+        <!-- RESOURCEFUL-->
+        <div class="feature">
+          <img
+            src="assets/home/desktop/illustration-resourceful.svg"
+            alt="Someone passionate"
+            class="feature__img"
+          />
+          <h3 class="heading-3 heading-3--dark">Resourceful</h3>
+          <p class="paragraph px-xsm">
+            Everything that we do has a strategic purpose. We use an agile
+            approach in all of our projects and value customer collaboration. It
+            guarantees superior results that fulfill our clients’ needs.
+          </p>
+        </div>
+
+        <!-- FRIENDLY-->
+        <div class="feature">
+          <img
+            src="assets/home/desktop/illustration-friendly.svg"
+            alt="Someone passionate"
+            class="feature__img"
+          />
+          <h3 class="heading-3 heading-3--dark">Friendly</h3>
+          <p class="paragraph px-xsm">
+            We are a group of enthusiastic folks who know how to put people
+            first. Our success depends on our customers, and we strive to give
+            them the best experience a company can provide.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!--    
+         Let’s talk about your project Ready to
+      take it to the next level? Contact us today and find out how our expertise
+      can help your business grow. Get in touch Our company Locations Contact
+      Designo Central Office 3886 Wellington Street Toronto, Ontario M9C 3J5
+      Contact Us (Central Office) P : +1 253-863-8967 M : contact@designo.co -->
   </body>
 </html>

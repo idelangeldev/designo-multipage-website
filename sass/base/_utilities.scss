@@ -1,0 +1,24 @@
+.grid {
+  display: grid;
+  column-gap: 3rem;
+
+  &__2-cols {
+    grid-template-columns: repeat(2, 6fr);
+  }
+
+  &__3-cols {
+    grid-template-columns: repeat(3, 4fr);
+  }
+}
+
+.md-sm {
+  margin-bottom: 4rem;
+}
+
+.no-x-gap {
+  column-gap: 0;
+}
+
+.px-xsm {
+  padding: 0 0.2rem;
+}

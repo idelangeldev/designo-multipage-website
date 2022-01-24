@@ -1,0 +1,62 @@
+.main-nav {
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.2rem;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 0.5px;
+    width: 100%;
+    background-color: $color-grey-dark;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s;
+  }
+
+  &__item:hover::before,
+  &__item:active::before {
+    transform: scaleX(1);
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: $color-grey-dark;
+      font-weight: 400;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.mobile-nav {
+  &__btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: none;
+  }
+
+  &__icon {
+    height: 2rem;
+
+    &--close {
+      display: none;
+    }
+  }
+}

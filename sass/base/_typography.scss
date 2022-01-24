@@ -1,8 +1,6 @@
 body {
   font-family: "Jost", sans-serif;
-  font-size: $body-font-size;
   font-weight: 400;
-  /* font-size: 16px; */
   line-height: 1.625;
   color: $color-grey-dark;
 }
@@ -17,7 +15,7 @@ body {
   color: $color-white;
   font-size: $heading-1-font-size;
   line-height: 1;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.9rem;
 }
 
 .heading-2 {
@@ -29,6 +27,7 @@ body {
     color: $color-white;
     text-transform: uppercase;
     margin-bottom: 2.4rem;
+    z-index: 3;
   }
   &--primary {
     color: $color-primary;
@@ -37,9 +36,34 @@ body {
 }
 
 .heading-3 {
-  color: $color-primary;
   font-size: $heading-3-font-size;
   letter-spacing: 5px;
   line-height: 1.3;
   margin-bottom: 2.4rem;
+  text-transform: uppercase;
+
+  &--dark {
+    color: $color-grey-dark;
+  }
+
+  &--primary {
+    color: $color-primary;
+  }
+}
+
+.subheading {
+  color: $color-white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.paragraph {
+  font-size: $body-font-size;
+
+  &--white {
+    color: $color-white;
+  }
 }

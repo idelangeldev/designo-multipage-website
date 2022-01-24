@@ -26,3 +26,15 @@ body {
     }
   }
 }
+
+.main-grid {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 16rem;
+  grid-template-columns:
+    [full-start] minmax(3.8rem, 1fr) [center-start] repeat(
+      12,
+      [col-start] minmax(min-content, 9.26rem) [col-end]
+    )
+    [center-end] minmax(3.8rem, 1fr) [full-end];
+}
