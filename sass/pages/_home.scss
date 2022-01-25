@@ -1,5 +1,15 @@
 .section-hero {
   grid-column: center-start / center-end;
+  position: relative;
+
+  &::before {
+    content: url(../../assets/shared/desktop/bg-pattern-leaf.svg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-16.3%, 46.127946128%);
+    z-index: -4;
+  }
 }
 
 .hero {
@@ -109,9 +119,29 @@
   grid-gap: $gutter-vertical;
   gap: $gutter-vertical;
 
-  padding-bottom: 16rem;
+  position: relative;
+
+  &::before {
+    content: url(../../assets/shared/desktop/bg-pattern-leaf.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(16.3%, 51.127946128%) rotate(180deg);
+    z-index: -4;
+  }
 }
 
 .feature {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__img {
+    display: block;
+    background-image: url(../../assets/shared/desktop/bg-pattern-small-circle.svg);
+    background-size: initial;
+    margin-bottom: 5rem;
+  }
 }

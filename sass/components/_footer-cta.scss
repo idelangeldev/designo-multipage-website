@@ -1,0 +1,24 @@
+.section-footer-cta {
+  grid-column: center-start / center-end;
+  background-color: $color-primary;
+  @include bRadius;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7.2rem 9.5rem;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.3089),
+      rgba($color-primary, 0.3089)
+    ),
+    url(../../assets/shared/desktop/bg-pattern-call-to-action.svg);
+  background-size: initial;
+  background-position: right;
+  background-blend-mode: normal;
+  background-repeat: no-repeat;
+
+  &__text-box {
+    flex-basis: 50%;
+  }
+}

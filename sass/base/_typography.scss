@@ -29,6 +29,15 @@ body {
     margin-bottom: 2.4rem;
     z-index: 3;
   }
+
+  &--white-alt {
+    color: $color-white;
+    line-height: 1;
+    letter-spacing: normal;
+    margin-bottom: 1.6rem;
+    padding-right: 12rem;
+  }
+
   &--primary {
     color: $color-primary;
     margin-bottom: 3rem;
@@ -39,7 +48,7 @@ body {
   font-size: $heading-3-font-size;
   letter-spacing: 5px;
   line-height: 1.3;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3rem;
   text-transform: uppercase;
 
   &--dark {
@@ -65,5 +74,11 @@ body {
 
   &--white {
     color: $color-white;
+  }
+
+  &--light-white {
+    color: $color-white;
+    opacity: 50%;
+    line-height: 1.625;
   }
 }
