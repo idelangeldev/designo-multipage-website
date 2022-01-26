@@ -16,6 +16,10 @@ body {
   font-size: $heading-1-font-size;
   line-height: 1;
   margin-bottom: 3.9rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 2.7rem;
+  }
 }
 
 .heading-2 {
@@ -36,6 +40,10 @@ body {
     letter-spacing: normal;
     margin-bottom: 1.6rem;
     padding-right: 12rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding-left: 12rem;
+    }
   }
 
   &--primary {

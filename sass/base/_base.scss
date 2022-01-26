@@ -15,6 +15,11 @@ body {
   box-sizing: border-box;
 }
 
+.body-wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
 .container {
   max-width: $grid-width;
   padding: 0 3.8rem;

@@ -29,17 +29,38 @@
   overflow: hidden;
   @include bRadius;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+    background-position-x: 330%;
+    background-position-y: center;
+  }
+
   &__text-box {
     padding: 14.15rem 4rem 14.15rem 9.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 6rem 7rem 0;
+      text-align: center;
+      margin-bottom: -7.5rem;
+    }
   }
 
   & .paragraph {
     padding-right: 7rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding-right: 5.55rem;
+      padding-left: 5.55rem;
+    }
   }
 
   &__img-box {
     background-image: url(../../assets/home/desktop/image-hero-phones.png);
     background-position: top center;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding-top: 53.4rem;
+    }
   }
 }
 
@@ -51,6 +72,10 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: $gutter-vertical;
   row-gap: $gutter-horizontal;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .projects {
@@ -87,17 +112,36 @@
     background: url(../../assets/home/desktop/image-web-design-large.jpg);
 
     grid-row: span 2;
+
+    @media only screen and (max-width: $bp-medium) {
+      min-height: 20rem;
+      background: url(../../assets/home/tablet/image-web-design.jpg) no-repeat
+        center center/cover;
+    }
   }
 
   &__app {
     background: url(../../assets/home/desktop/image-app-design.jpg);
     min-height: 30.8rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      min-height: 20rem;
+      background: url(../../assets/home/tablet/image-app-design.jpg) no-repeat
+        center center/cover;
+    }
   }
 
   &__design {
     grid-column: 2 / 3;
     background: url(../../assets/home/desktop/image-graphic-design.jpg);
     min-height: 30.8rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+      min-height: 20rem;
+      background: url(../../assets/home/tablet/image-graphic-design.jpg)
+        no-repeat center center/cover;
+    }
   }
 
   &__link {
@@ -121,6 +165,10 @@
 
   position: relative;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+  }
+
   &::before {
     content: url(../../assets/shared/desktop/bg-pattern-leaf.svg);
     position: absolute;
@@ -137,11 +185,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: row;
+    text-align: left;
+  }
 
   &__img {
     display: block;
     background-image: url(../../assets/shared/desktop/bg-pattern-small-circle.svg);
     background-size: initial;
-    margin-bottom: 5rem;
   }
 }

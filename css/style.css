@@ -11,6 +11,10 @@ html {
 body {
   box-sizing: border-box; }
 
+.body-wrapper {
+  overflow-x: hidden;
+  position: relative; }
+
 .container {
   max-width: 118.6rem;
   padding: 0 3.8rem;
@@ -41,6 +45,9 @@ body {
   font-size: 4.8rem;
   line-height: 1;
   margin-bottom: 3.9rem; }
+  @media only screen and (max-width: 62em) {
+    .heading-1 {
+      margin-bottom: 2.7rem; } }
 
 .heading-2 {
   font-size: 4rem;
@@ -57,6 +64,9 @@ body {
     letter-spacing: normal;
     margin-bottom: 1.6rem;
     padding-right: 12rem; }
+    @media only screen and (max-width: 62em) {
+      .heading-2--white-alt {
+        padding-left: 12rem; } }
   .heading-2--primary {
     color: #e7816b;
     margin-bottom: 3rem; }
@@ -99,6 +109,9 @@ body {
 
 .md-sm {
   margin-bottom: 4rem; }
+  @media only screen and (max-width: 62em) {
+    .md-sm {
+      margin-bottom: 2rem; } }
 
 .no-x-gap {
   column-gap: 0; }
@@ -149,8 +162,21 @@ body {
   background-position: right;
   background-blend-mode: normal;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 62em) {
+    .section-footer-cta {
+      flex-direction: column;
+      text-align: center;
+      padding: 5.7rem;
+      background-position: center center; } }
   .section-footer-cta__text-box {
     flex-basis: 50%; }
+    @media only screen and (max-width: 62em) {
+      .section-footer-cta__text-box {
+        flex-basis: 100%; } }
+  @media only screen and (max-width: 62em) {
+    .section-footer-cta .paragraph {
+      padding: 0 7rem;
+      margin-bottom: 3.2rem; } }
 
 .footer {
   background-color: #1d1c1e;
@@ -183,7 +209,7 @@ body {
   .footer__social-box {
     display: flex;
     gap: 1.6rem; }
-  .footer__logo {
+  .footer__logo--social {
     display: block;
     height: 2.4rem; }
 
@@ -300,13 +326,30 @@ body {
   background-repeat: no-repeat;
   overflow: hidden;
   border-radius: 1.5rem; }
+  @media only screen and (max-width: 62em) {
+    .hero {
+      grid-template-columns: 1fr;
+      background-position-x: 330%;
+      background-position-y: center; } }
   .hero__text-box {
     padding: 14.15rem 4rem 14.15rem 9.5rem; }
+    @media only screen and (max-width: 62em) {
+      .hero__text-box {
+        padding: 6rem 7rem 0;
+        text-align: center;
+        margin-bottom: -7.5rem; } }
   .hero .paragraph {
     padding-right: 7rem; }
+    @media only screen and (max-width: 62em) {
+      .hero .paragraph {
+        padding-right: 5.55rem;
+        padding-left: 5.55rem; } }
   .hero__img-box {
     background-image: url(../../assets/home/desktop/image-hero-phones.png);
     background-position: top center; }
+    @media only screen and (max-width: 62em) {
+      .hero__img-box {
+        padding-top: 53.4rem; } }
 
 .section-projects {
   grid-column: center-start / center-end;
@@ -314,6 +357,9 @@ body {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3rem;
   row-gap: 2.4rem; }
+  @media only screen and (max-width: 62em) {
+    .section-projects {
+      grid-template-columns: 1fr; } }
 
 .projects__web, .projects__app, .projects__design {
   position: relative;
@@ -338,15 +384,28 @@ body {
 .projects__web {
   background: url(../../assets/home/desktop/image-web-design-large.jpg);
   grid-row: span 2; }
+  @media only screen and (max-width: 62em) {
+    .projects__web {
+      min-height: 20rem;
+      background: url(../../assets/home/tablet/image-web-design.jpg) no-repeat center center/cover; } }
 
 .projects__app {
   background: url(../../assets/home/desktop/image-app-design.jpg);
   min-height: 30.8rem; }
+  @media only screen and (max-width: 62em) {
+    .projects__app {
+      min-height: 20rem;
+      background: url(../../assets/home/tablet/image-app-design.jpg) no-repeat center center/cover; } }
 
 .projects__design {
   grid-column: 2 / 3;
   background: url(../../assets/home/desktop/image-graphic-design.jpg);
   min-height: 30.8rem; }
+  @media only screen and (max-width: 62em) {
+    .projects__design {
+      grid-column: 1 / -1;
+      min-height: 20rem;
+      background: url(../../assets/home/tablet/image-graphic-design.jpg) no-repeat center center/cover; } }
 
 .projects__link {
   position: absolute;
@@ -363,6 +422,9 @@ body {
   grid-gap: 3rem;
   gap: 3rem;
   position: relative; }
+  @media only screen and (max-width: 62em) {
+    .section-features {
+      grid-template-columns: 1fr; } }
   .section-features::before {
     content: url(../../assets/shared/desktop/bg-pattern-leaf.svg);
     position: absolute;
@@ -376,9 +438,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  gap: 5rem; }
+  @media only screen and (max-width: 62em) {
+    .feature {
+      flex-direction: row;
+      text-align: left; } }
   .feature__img {
     display: block;
     background-image: url(../../assets/shared/desktop/bg-pattern-small-circle.svg);
-    background-size: initial;
-    margin-bottom: 5rem; }
+    background-size: initial; }
