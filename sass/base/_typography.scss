@@ -20,6 +20,11 @@ body {
   @media only screen and (max-width: $bp-medium) {
     margin-bottom: 2.7rem;
   }
+
+  @media only screen and (max-width: $bp-xsmall) {
+    font-size: 3.2rem;
+    line-height: 1.125;
+  }
 }
 
 .heading-2 {
@@ -32,6 +37,12 @@ body {
     text-transform: uppercase;
     margin-bottom: 2.4rem;
     z-index: 3;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 2.8rem;
+      letter-spacing: 1.4px;
+      line-height: 1.285714286;
+    }
   }
 
   &--white-alt {
@@ -43,6 +54,13 @@ body {
 
     @media only screen and (max-width: $bp-medium) {
       padding-left: 12rem;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 3.2rem;
+      line-height: 1.125;
+      padding-right: 3rem;
+      padding-left: 3rem;
     }
   }
 

@@ -25,6 +25,10 @@ body {
   padding: 0 3.8rem;
   margin: 0 auto;
 
+  @media only screen and (max-width: $bp-xsmall) {
+    padding: 0 2.4rem;
+  }
+
   &--alt {
     @media only screen and (max-width: $bp-small) {
       padding: 0;
@@ -42,4 +46,17 @@ body {
       [col-start] minmax(min-content, 9.26rem) [col-end]
     )
     [center-end] minmax(3.8rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-medium) {
+    row-gap: 12rem;
+  }
+
+  @media only screen and (max-width: $bp-xsmall) {
+    grid-template-columns:
+      [full-start] minmax(2.4rem, 1fr) [center-start] repeat(
+        12,
+        [col-start] minmax(min-content, 9.26rem) [col-end]
+      )
+      [center-end] minmax(2.4rem, 1fr) [full-end];
+  }
 }

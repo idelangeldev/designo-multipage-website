@@ -12,6 +12,21 @@
     )
     [center-end] minmax(3.8rem, 1fr) [full-end];
 
+  @media only screen and (max-width: $bp-small) {
+    padding-bottom: 6.4rem;
+  }
+
+  @media only screen and (max-width: $bp-xsmall) {
+    grid-template-columns:
+      [full-start] minmax(2.4rem, 1fr) [center-start] repeat(
+        12,
+        [col-start] minmax(min-content, 9.26rem) [col-end]
+      )
+      [center-end] minmax(2.4rem, 1fr) [full-end];
+    padding-top: 26.1rem;
+    margin-top: -18.9rem;
+  }
+
   &__container {
     grid-column: center-start / center-end;
   }
@@ -22,11 +37,26 @@
     justify-content: space-between;
     padding-bottom: 4rem;
     border-bottom: 1px solid #ffffff1a;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      gap: 3.2rem;
+      align-items: stretch;
+      border-bottom: none;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+      padding-bottom: 2rem;
+    }
   }
 
   &__logo {
     height: 2.7rem;
     display: block;
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 0 auto;
+    }
   }
 
   &__contacts {
@@ -34,6 +64,19 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding-top: 3.4rem;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: 1fr;
+      grid-gap: 4rem;
+      gap: 4rem;
+      align-items: center;
+      justify-items: center;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+      padding-top: 2rem;
+    }
   }
 
   &__contact {
@@ -42,6 +85,11 @@
       align-items: flex-end;
       justify-content: flex-end;
       min-height: 7.8rem;
+
+      @media only screen and (max-width: $bp-small) {
+        align-items: flex-start;
+        min-height: auto;
+      }
     }
   }
 
@@ -57,11 +105,20 @@
 }
 
 .footer-nav {
+  @media only screen and (max-width: $bp-small) {
+    padding-top: 3.2rem;
+    border-top: 1px solid #ffffff1a;
+  }
+
   &__list {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 4.2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
   }
 
   &__item {

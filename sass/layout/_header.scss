@@ -1,6 +1,12 @@
 .header {
   padding: 6.4rem 0;
 
+  @media only screen and (max-width: $bp-small) {
+    padding: 3.45rem 0;
+    background-color: $color-white;
+    z-index: 10;
+  }
+
   &__container {
     max-width: $grid-width;
     padding: 0 3.8rem;
@@ -8,6 +14,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 0 2.4rem;
+    }
   }
 
   &__logo {
