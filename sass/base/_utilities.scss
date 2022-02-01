@@ -8,7 +8,51 @@
 
   &__3-cols {
     grid-template-columns: repeat(3, 4fr);
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
   }
+
+  &__7-5-cols {
+    grid-template-columns: 7fr 5fr;
+    column-gap: 0;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__5-7-cols {
+    grid-template-columns: 5fr 7fr;
+    column-gap: 0;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__8-4-cols {
+    grid-template-columns: 8fr 4fr;
+    row-gap: 2.4rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__4-8-cols {
+    grid-template-columns: 4fr 8fr;
+    row-gap: 2.4rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.center {
+  grid-column: center-start / center-end;
 }
 
 .md-sm {

@@ -1,0 +1,197 @@
+.section-hero--alt {
+  grid-column: center-start / center-end;
+  background-color: $color-primary;
+  @include bRadius;
+  justify-content: center;
+  position: relative;
+
+  @media only screen and (max-width: $bp-xsmall) {
+    grid-column: full-start / full-end;
+    border-radius: 0;
+  }
+
+  &--web {
+    background-image: url(../../assets/web-design/desktop/bg-pattern-intro-web.svg);
+    @include hero--alt-bg;
+  }
+
+  &--app {
+    background-image: url(../../assets/app-design/desktop/bg-pattern-intro-app.svg);
+    @include hero--alt-bg;
+  }
+
+  &--graphic {
+    background-image: url(../../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
+    @include hero--alt-bg;
+  }
+
+  &::before {
+    content: url(../../assets/shared/desktop/bg-pattern-leaf.svg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-16.3%, 77.4%);
+    z-index: -4;
+  }
+}
+
+.hero--alt {
+  &__text-box {
+    max-width: 55rem;
+    text-align: center;
+    padding: 5.65rem 7rem;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 10.5rem 2.4rem;
+    }
+
+    & .paragraph {
+      @media only screen and (max-width: $bp-xsmall) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+.section-designs {
+  grid-column: center-start / center-end;
+  row-gap: 3.2rem;
+
+  &__design {
+    text-align: center;
+    @include bRadius;
+    overflow: hidden;
+    display: grid;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+      grid-template-columns: 1fr;
+    }
+
+    &:hover,
+    &:active {
+      cursor: pointer;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  &__details {
+    padding: 3.2rem;
+    background-color: $color-primary-xlight;
+    transition: all 0.4s ease-in-out;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: grid;
+      align-content: center;
+    }
+
+    // &:hover,
+    // &:active {
+    //   background-color: $color-primary;
+    //   color: $color-white;
+    // }
+  }
+
+  &__design:hover .section-designs__details,
+  &__design:active .section-designs__details {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &__design:hover .heading-3--primary,
+  &__design:active .heading-3--primary {
+    color: $color-white;
+  }
+}
+
+// .section-designs__design:hover .section-designs__details {
+//   background-color: $color-primary;
+//   color: $color-white;
+// }
+
+.section-services {
+  grid-column: center-start / center-end;
+  row-gap: 2.4rem;
+
+  &__web,
+  &__app,
+  &__design {
+    @include projectsServicesPositioning;
+    @include bRadius;
+  }
+
+  &__web::before,
+  &__app::before,
+  &__design::before {
+    @include projectsServicesAbsolute;
+  }
+
+  &__web:hover::before,
+  &__app:hover::before,
+  &__design:hover::before {
+    background: rgba($color-primary, 0.8);
+  }
+
+  &__web {
+    background: url(../../assets/home/desktop/image-web-design-small.jpg);
+    min-height: 30.8rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+      min-height: 20rem;
+      background: url(../../assets/home/tablet/image-web-design.jpg) no-repeat
+        center center/cover;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+      min-height: 25rem;
+      background: url(../../assets/home/mobile/image-web-design.jpg) no-repeat
+        center center/cover;
+    }
+  }
+
+  &__app {
+    background: url(../../assets/home/desktop/image-app-design.jpg);
+    min-height: 30.8rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+      min-height: 20rem;
+      background: url(../../assets/home/tablet/image-app-design.jpg) no-repeat
+        center center/cover;
+    }
+    @media only screen and (max-width: $bp-xsmall) {
+      min-height: 25rem;
+      background: url(../../assets/home/mobile/image-app-design.jpg) no-repeat
+        center center/cover;
+    }
+  }
+
+  &__design {
+    grid-column: 2 / 3;
+    background: url(../../assets/home/desktop/image-graphic-design.jpg);
+    min-height: 30.8rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+      min-height: 20rem;
+      background: url(../../assets/home/tablet/image-graphic-design.jpg)
+        no-repeat center center/cover;
+    }
+    @media only screen and (max-width: $bp-xsmall) {
+      min-height: 25rem;
+      background: url(../../assets/home/mobile/image-graphic-design.jpg)
+        no-repeat center center/cover;
+    }
+  }
+
+  &__link {
+    @include projectsServiceslink;
+  }
+}

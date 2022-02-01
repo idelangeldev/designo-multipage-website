@@ -12,6 +12,11 @@
     )
     [center-end] minmax(3.8rem, 1fr) [full-end];
 
+  &__alt {
+    padding-top: 7.2rem;
+    margin-top: 16rem;
+  }
+
   @media only screen and (max-width: $bp-small) {
     padding-bottom: 6.4rem;
   }
@@ -80,6 +85,15 @@
   }
 
   &__contact {
+    &--link {
+      &:link,
+      &:active {
+        display: inline-block;
+        text-decoration: none;
+        color: currentColor;
+      }
+    }
+
     &--social {
       display: flex;
       align-items: flex-end;

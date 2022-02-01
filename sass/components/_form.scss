@@ -1,0 +1,58 @@
+// FORM
+.contact-form {
+  display: grid;
+  gap: 2.376rem;
+
+  padding: 5.5rem 9.5rem 5.5rem 0;
+
+  &__group {
+    position: relative;
+
+    &.error .contact-form__error {
+      visibility: visible;
+    }
+  }
+
+  &__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    color: $color-white;
+    padding: 0.3rem 1.6rem 1.2rem 1.6rem;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $color-white;
+    display: block;
+    transition: all 0.3s;
+
+    &--textarea {
+      padding-bottom: 3.5rem;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid $color-white;
+    }
+
+    &::placeholder {
+      font-family: inherit;
+      font-weight: 400;
+      color: $color-white;
+      opacity: 50%;
+    }
+  }
+
+  &__error {
+    color: $color-white;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    visibility: hidden;
+  }
+}

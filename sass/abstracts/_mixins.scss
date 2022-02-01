@@ -1,3 +1,45 @@
 @mixin bRadius {
   border-radius: 1.5rem;
 }
+
+@mixin hero--alt-bg {
+  background-size: initial;
+  background-position: right;
+  background-blend-mode: normal;
+  background-repeat: no-repeat;
+}
+
+@mixin projectsServicesPositioning {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin projectsServicesAbsolute {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transform-origin: left;
+  transition: all 0.3s ease-in;
+}
+
+@mixin projectsServiceslink {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+@mixin bg-two-circles {
+  background-image: url(../../assets/shared/desktop/bg-pattern-two-circles.svg);
+  background-size: initial;
+  background-position: left bottom;
+  background-blend-mode: normal;
+  background-repeat: no-repeat;
+}

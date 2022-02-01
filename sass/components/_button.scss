@@ -3,13 +3,16 @@
   &:link,
   &:visited {
     font-size: 1.5rem;
+    font-family: inherit;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.582rem 2.429rem;
     display: inline-block;
+    border: none;
     border-radius: 8px;
+    cursor: pointer;
     transition: all 0.3s;
   }
 
@@ -23,9 +26,21 @@
     }
   }
 
-  &--secondary {
+  &--secondary,
+  &--form {
     background-color: $color-white;
     color: $color-grey-dark;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary-light;
+      color: $color-white;
+    }
+  }
+
+  &--form {
+    padding: 1.582rem 4.708rem;
+    justify-self: end;
 
     &:hover,
     &:active {

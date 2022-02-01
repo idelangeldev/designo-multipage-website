@@ -19,21 +19,277 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
 
     <title>Frontend Mentor | Designo Agency Website Challenge</title>
   </head>
   <body>
-    Our Company Locations Contact App design Our mobile designs bring intuitive
-    digital solutions to your customers right at their fingertips. Airfilter
-    Solving the problem of poor indoor air quality by filtering the air Eyecam
-    Product that lets you edit your favorite photos and videos at any time
-    Faceit Get to meet your favorite internet superstar with the faceit app Todo
-    A todo app that features cloud sync with light and dark mode Loopstudios A
-    VR experience app made for Loopstudios Web Design View Projects Graphic
+    <div class="body-wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="index.html">
+            <img
+              src="assets/shared/desktop/logo-dark.png"
+              alt="Designo logo"
+              class="header__logo"
+            />
+          </a>
+  
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="about.html" class="main-nav__link">Our Company</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="locations.html" class="main-nav__link">Locations</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="contact.html" class="main-nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <button class="mobile-nav__btn">
+            <img
+              src="assets/shared/mobile/icon-hamburger.svg"
+              alt=""
+              class="mobile-nav__icon mobile-nav__icon--hamburger"
+            />
+            <img
+              src="assets/shared/mobile/icon-close.svg"
+              alt=""
+              class="mobile-nav__icon mobile-nav__icon--close"
+            />
+          </button>
+        </div>
+      </header>
+  
+      <main class="main-grid">      
+
+        <section class="section-hero--alt section-hero--alt--app grid">
+          <div class="hero--alt__text-box">
+            <h1 class="heading-1">App design</h1>
+            <p class="paragraph paragraph--white">
+              Our mobile designs bring intuitive
+    digital solutions to your customers right at their fingertips.
+            </p>
+          </div>
+        </section>
+
+        <section class="section-designs grid grid__3-cols">
+          <!-- Airfilter App -->
+          <div class="section-designs__design">
+            <img src="assets/app-design/desktop/image-airfilter.jpg" alt="" class="section-designs__img">
+            <div class="section-designs__details">
+              <h3 class="heading-3 heading-3--primary">
+                Airfilter    
+              </h3>
+              <p class="paragraph">
+                Solving the problem of poor indoor air quality by filtering the air
+              </p>
+            </div>
+          </div>
+          <!-- Airfilter App Ends-->
+
+         <!-- Eyecam App -->
+          <div class="section-designs__design">
+            <img src="assets/app-design/desktop/image-eyecam.jpg" alt="" class="section-designs__img">
+            <div class="section-designs__details">
+              <h3 class="heading-3 heading-3--primary">
+                Eyecam    
+              </h3>
+              <p class="paragraph">
+                Product that lets you edit your favorite photos and videos at any time
+              </p>
+            </div>
+          </div>
+          <!-- Eyecam App Ends-->
+          
+          <!-- Faceit App -->
+          <div class="section-designs__design">
+            <img src="assets/app-design/desktop/image-faceit.jpg" alt="" class="section-designs__img">
+            <div class="section-designs__details">
+              <h3 class="heading-3 heading-3--primary">
+                Faceit
+              </h3>
+              <p class="paragraph">
+                Get to meet your favorite internet superstar with the faceit app
+              </p>
+            </div>
+          </div>
+          <!-- Faceit App Ends-->
+
+          <!-- Todo App -->
+          <div class="section-designs__design">
+            <img src="assets/app-design/desktop/image-todo.jpg" alt="" class="section-designs__img">
+            <div class="section-designs__details">
+              <h3 class="heading-3 heading-3--primary">
+                Todo
+              </h3>
+              <p class="paragraph">                
+    A todo app that features cloud sync with light and dark mode
+              </p>
+            </div>
+          </div>
+          <!-- Todo App Ends-->
+
+          <!-- Loopstudios App -->
+          <div class="section-designs__design">
+            <img src="assets/app-design/desktop/image-loopstudios.jpg" alt="" class="section-designs__img">
+            <div class="section-designs__details">
+              <h3 class="heading-3 heading-3--primary">
+                Loopstudios
+              </h3>
+              <p class="paragraph">
+                 A VR experience app made for Loopstudios
+              </p>
+            </div>
+          </div>
+          <!-- Loopstudios App Ends -->          
+        </section>
+
+
+        <section class="section-services grid grid__2-cols">
+          <div class="section-services__web">
+            
+            <h2 class="heading-2 heading-2--white">Web Design</h2>
+            <p class="subheading">
+              View Projects
+              <img
+                src="assets/shared/desktop/icon-right-arrow.svg"
+                alt=""
+                class="section-services__icon"
+              />
+            </p>
+            <a href="web-design.html" class="section-services__link"></a>
+          </div>
+
+          <div class="section-services__design">
+            
+            <h2 class="heading-2 heading-2--white">Graphic Design</h2>
+            <p class="subheading">
+              View Projects
+              <img
+                src="assets/shared/desktop/icon-right-arrow.svg"
+                alt=""
+                class="section-services__icon"
+              />
+            </p>
+            <a href="graphic-design.html" class="section-services__link"></a>
+          </div>
+
+        </section> 
+      
+        
+  
+        <section class="section-footer-cta">
+          <div class="section-footer-cta__text-box">
+            <h2 class="heading-2 heading-2--white-alt">
+              Let’s talk about your project
+            </h2>
+            <p class="paragraph paragraph--white">
+              Ready to take it to the next level? Contact us today and find out
+              how our expertise can help your business grow.
+            </p>
+          </div>
+          <a href="contact.html" class="btn btn--secondary">Get in touch</a>
+        </section>
+      </main>
+  
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__nav-box">
+            <a href="#">
+              <img
+                src="assets/shared/desktop/logo-light.png"
+                alt="Designo logo"
+                class="footer__logo"
+              />
+            </a>
+  
+            <nav class="footer-nav">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="about.html" class="footer-nav__link">Our Company</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="locations.html" class="footer-nav__link">Locations</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="contact.html" class="footer-nav__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__contacts">
+            <div class="footer__contact">
+              <p class="paragraph paragraph--light-white bold">
+                Designo Central Office
+              </p>
+              <p class="paragraph paragraph--light-white">
+                3886 Wellington Street
+              </p>
+              <p class="paragraph paragraph--light-white">
+                Toronto, Ontario M9C 3J5
+              </p>
+            </div>
+            <div class="footer__contact">
+              <p class="paragraph paragraph--light-white bold">
+                Contact Us (Central Office)
+              </p>
+              <p class="paragraph paragraph--light-white bold">
+                P : <a href="tel:+12538638967" class="footer__contact--link">+1 253-863-8967</a> 
+              </p>
+              <p class="paragraph paragraph--light-white bold">
+                M : <a href="mailto:contact@designo.co" class="footer__contact--link">contact@designo.co</a> 
+              </p>
+            </div>
+            <div class="footer__contact footer__contact--social">
+              <div class="footer__social-box">
+                <a href="#">
+                  <img
+                    src="assets/shared/desktop/icon-facebook.svg"
+                    alt="Facebook logo"
+                    class="footer__logo--social"
+                  />
+                <a href="#">
+                  <img
+                    src="assets/shared/desktop/icon-youtube.svg"
+                    alt="Facebook logo"
+                    class="footer__logo--social"
+                  />
+                <a href="#">
+                  <img
+                    src="assets/shared/desktop/icon-twitter.svg"
+                    alt="Facebook logo"
+                    class="footer__logo--social"
+                  />
+                <a href="#">
+                  <img
+                    src="assets/shared/desktop/icon-pinterest.svg"
+                    alt="Facebook logo"
+                    class="footer__logo--social"
+                  />
+                <a href="#">
+                  <img
+                    src="assets/shared/desktop/icon-instagram.svg"
+                    alt="Facebook logo"
+                    class="footer__logo--social"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!--   
+       Web Design View Projects Graphic
     Design View Projects Let’s talk about your project Ready to take it to the
     next level? Contact us today and find out how our expertise can help your
     business grow. Get in touch Our company Locations Contact Designo Central
     Office 3886 Wellington Street Toronto, Ontario M9C 3J5 Contact Us (Central
-    Office) P : +1 253-863-8967 M : contact@designo.co
+    Office) P : +1 253-863-8967 M : contact@designo.co -->
   </body>
 </html>

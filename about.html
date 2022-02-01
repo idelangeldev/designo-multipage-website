@@ -1,75 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+
+    <title>Frontend Mentor | Designo Agency Website Challenge</title>
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="index.html">
+            <img
+              src="assets/shared/desktop/logo-dark.png"
+              alt="Designo logo"
+              class="header__logo"
+            />
+          </a>
   
-  <title>Frontend Mentor | Designo Agency Website Challenge</title>
-</head>
-<body>
-  Our Company
-  Locations
-  Contact
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="about.html" class="main-nav__link">Our Company</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="locations.html" class="main-nav__link">Locations</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="contact.html" class="main-nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <button class="mobile-nav__btn">
+            <img
+              src="assets/shared/mobile/icon-hamburger.svg"
+              alt=""
+              class="mobile-nav__icon mobile-nav__icon--hamburger"
+            />
+            <img
+              src="assets/shared/mobile/icon-close.svg"
+              alt=""
+              class="mobile-nav__icon mobile-nav__icon--close"
+            />
+          </button>
+        </div>
+      </header>
+  
+      <main class="main-grid">      
 
-  About us
-  Founded in 2010, we are a creative agency that produces lasting results for our clients. 
-  We’ve partnered with many startups, corporations, and nonprofits alike to craft designs 
-  that make real impact. We’re always looking forward to creating brands, products, and 
-  digital experiences that connect with our clients' audiences.
+        <section class="section-hero-about grid grid__7-5-cols center">
+          <div class="section-hero-about__text-box">
+            <div class="section-hero-about__text">
+              <h1 class="heading-1">About us</h1>
+              <p class="paragraph paragraph--white">
+                Founded in 2010, we are a creative agency that produces lasting results for our clients. 
+                We’ve partnered with many startups, corporations, and nonprofits alike to craft designs 
+                that make real impact. We’re always looking forward to creating brands, products, and 
+                digital experiences that connect with our clients' audiences.</p>
+            </div>
+          </div>
+          <!-- <div class="section-hero-about__img-box"> -->
+            <picture >
+              <source
+                srcset="assets/about/mobile/image-about-hero.jpg"
+                media="(max-width: 34em)"
+              />
+              <source
+                srcset="assets/about/tablet/image-about-hero.jpg"
+                media="(max-width: 62em)"
+              />
+              <img
+                srcset="assets/about/desktop/image-about-hero.jpg"
+                alt="Image-About-hero"
+                src="assets/about/desktop/image-about-hero.jpg"
+                class="section-hero-about__img"
+              />
+            </picture>
+            
+          <!-- </div> -->
+        </section>
 
-  World-class talent
-  We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
+        <section class="section-talent grid grid__5-7-cols center">          
+                   
+            <picture >
+              <source
+                srcset="assets/about/mobile/image-world-class-talent.jpg"
+                media="(max-width: 34em)"
+              />
+              <source
+                srcset="assets/about/tablet/image-world-class-talent.jpg"
+                media="(max-width: 62em)"
+              />
+              <img
+                srcset="assets/about/desktop/image-world-class-talent.jpg"
+                alt="World-class Talent"
+                src="assets/about/desktop/image-world-class-talent.jpg"
+                class="section-talent__img"
+              />
+            </picture>
+
+          <div class="section-talent__description-box">
+            <div class="section-talent__description">
+            <h2 class="heading-2 heading-2--primary">World-class talent</h2> 
+            <p class="paragraph">
+              We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
   crafted from concept to launch, ensuring success in its given market. We are constantly updating 
   our skills in a myriad of platforms.
-
-  Our team is multi-disciplinary and we are not merely interested in form — content and meaning 
+            </p>            
+            <p class="paragraph">
+              Our team is multi-disciplinary and we are not merely interested in form — content and meaning 
   are just as important. We give great importance to craftsmanship, service, and prompt delivery. 
   Clients have always been impressed with our high-quality outcomes that encapsulates their 
   brand’s story and mission.
+            </p>  
+            </div>
+          </div>
+        </section>
 
-  The real deal
-  As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
+
+        <section class="section-locations grid grid__3-cols center">
+          <!-- Canada -->
+          <div class="section-locations__location">
+            <img src="assets/shared/desktop/illustration-canada.svg" alt="illustration-canada" class="section-locations__img">
+            <div class="section-locations__country">
+              <h3 class="heading-3 heading-3--dark">Canada</h3>
+              <a href="locations.html" class="btn btn--primary">See location</a>
+            </div>
+          </div>
+          <!-- Canada Ends -->
+
+          <!-- Australia -->
+          <div class="section-locations__location">
+            <img src="assets/shared/desktop/illustration-australia.svg" alt="illustration-australia" class="section-locations__img">
+            <div class="section-locations__country">
+              <h3 class="heading-3 heading-3--dark">Australia</h3>
+              <a href="locations.html" class="btn btn--primary">See location</a>
+            </div>
+          </div>
+           <!-- Australia Ends -->
+           
+          <!-- United Kingdom -->
+          <div class="section-locations__location">
+            <img src="assets/shared/desktop/illustration-united-kingdom.svg" alt="illustration-united-kingdom" class="section-locations__img">
+            <div class="section-locations__country">
+              <h3 class="heading-3 heading-3--dark">United Kingdom</h3>
+              <a href="locations.html" class="btn btn--primary">See location</a>
+            </div>
+          </div>
+          <!-- United Kingdom Ends-->
+        </section>
+
+
+
+        <section class="section-real grid grid__7-5-cols center">
+          <div class="section-real__text-box">
+            <div class="section-real__text">
+            <h2 class="heading-2 heading-2--primary">The real deal</h2> 
+            <p class="paragraph">
+              As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
   Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every
   opportunity. We make design and technology more accessible and give you tools to measure success.
-
-  We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, 
+            </p>            
+            <p class="paragraph">
+              We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, 
   we inspire audiences to take action and drive real results.
+            </p>
+          </div>  
+          </div>         
+          <picture >
+            <source
+              srcset="assets/about/mobile/image-real-deal.jpg"
+              media="(max-width: 34em)"
+            />
+            <source
+              srcset="assets/about/tablet/image-real-deal.jpg"
+              media="(max-width: 62em)"
+            />
+            <img
+              srcset="assets/about/desktop/image-real-deal.jpg"
+              alt="Image Real Deal"
+              src="assets/about/desktop/image-real-deal.jpg"
+              class="section-real__img"
+            />
+          </picture>
+        </section>
 
-  Canada
-  See location
 
-  Australia
-  See location
+        
+        
+  
+        <section class="section-footer-cta">
+          <div class="section-footer-cta__text-box">
+            <h2 class="heading-2 heading-2--white-alt">
+              Let’s talk about your project
+            </h2>
+            <p class="paragraph paragraph--white">
+              Ready to take it to the next level? Contact us today and find out
+              how our expertise can help your business grow.
+            </p>
+          </div>
+          <a href="contact.html" class="btn btn--secondary">Get in touch</a>
+        </section>
+      </main>
+  
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__nav-box">
+            <a href="#">
+              <img
+                src="assets/shared/desktop/logo-light.png"
+                alt="Designo logo"
+                class="footer__logo"
+              />
+            </a>
+  
+            <nav class="footer-nav">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a href="about.html" class="footer-nav__link">Our Company</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="locations.html" class="footer-nav__link">Locations</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="contact.html" class="footer-nav__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__contacts">
+            <div class="footer__contact">
+              <p class="paragraph paragraph--light-white bold">
+                Designo Central Office
+              </p>
+              <p class="paragraph paragraph--light-white">
+                3886 Wellington Street
+              </p>
+              <p class="paragraph paragraph--light-white">
+                Toronto, Ontario M9C 3J5
+              </p>
+            </div>
+            <div class="footer__contact">
+              <p class="paragraph paragraph--light-white bold">
+                Contact Us (Central Office)
+              </p>
+              <p class="paragraph paragraph--light-white bold">
+                P : <a href="tel:+12538638967" class="footer__contact--link">+1 253-863-8967</a> 
+              </p>
+              <p class="paragraph paragraph--light-white bold">
+                M : <a href="mailto:contact@designo.co" class="footer__contact--link">contact@designo.co</a> 
+              </p>
+            </div>
+            <div class="footer__contact footer__contact--social">
+              <div class="footer__social-box">
+                <a href="#">
+                  <img
+                    src="assets/shared/desktop/icon-facebook.svg"
+                    alt="Facebook logo"
+                    class="footer__logo--social"
+                  />
+                <a href="#">
+                  <img
+                    src="assets/shared/desktop/icon-youtube.svg"
+                    alt="Facebook logo"
+                    class="footer__logo--social"
+                  />
+                <a href="#">
+                  <img
+                    src="assets/shared/desktop/icon-twitter.svg"
+                    alt="Facebook logo"
+                    class="footer__logo--social"
+                  />
+                <a href="#">
+                  <img
+                    src="assets/shared/desktop/icon-pinterest.svg"
+                    alt="Facebook logo"
+                    class="footer__logo--social"
+                  />
+                <a href="#">
+                  <img
+                    src="assets/shared/desktop/icon-instagram.svg"
+                    alt="Facebook logo"
+                    class="footer__logo--social"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-  United Kingdom
-  See location
 
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can 
-  help your business grow.
-  Get in touch
-
-  Our company
-  Locations
-  Contact
-
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
-</body>
+  </body>
 </html>

@@ -47,6 +47,10 @@ body {
     )
     [center-end] minmax(3.8rem, 1fr) [full-end];
 
+  &--alt {
+    grid-template-rows: repeat(2, min-content);
+  }
+
   @media only screen and (max-width: $bp-medium) {
     row-gap: 12rem;
   }
