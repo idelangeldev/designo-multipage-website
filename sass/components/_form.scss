@@ -5,6 +5,14 @@
 
   padding: 5.5rem 9.5rem 5.5rem 0;
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0 5.8rem 7.8rem;
+  }
+
+  @media only screen and (max-width: $bp-xsmall) {
+    padding: 0 2.4rem 7rem;
+  }
+
   &__group {
     position: relative;
 

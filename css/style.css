@@ -6,7 +6,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box; }
@@ -259,6 +260,12 @@ body {
   display: grid;
   gap: 2.376rem;
   padding: 5.5rem 9.5rem 5.5rem 0; }
+  @media only screen and (max-width: 62em) {
+    .contact-form {
+      padding: 0 5.8rem 7.8rem; } }
+  @media only screen and (max-width: 34em) {
+    .contact-form {
+      padding: 0 2.4rem 7rem; } }
   .contact-form__group {
     position: relative; }
     .contact-form__group.error .contact-form__error {
@@ -307,6 +314,10 @@ body {
   .footer__alt {
     padding-top: 7.2rem;
     margin-top: 16rem; }
+    @media only screen and (max-width: 34em) {
+      .footer__alt {
+        padding-top: 6.4rem !important;
+        margin-top: 12rem !important; } }
   @media only screen and (max-width: 45em) {
     .footer {
       padding-bottom: 6.4rem; } }
@@ -535,10 +546,21 @@ body {
   background-blend-mode: normal;
   background-repeat: no-repeat;
   position: relative; }
+  @media only screen and (max-width: 62em) {
+    .section-hero-about {
+      background-position: -236% 895%; } }
+  @media only screen and (max-width: 45em) {
+    .section-hero-about {
+      background-position: 166%; } }
   @media only screen and (max-width: 34em) {
     .section-hero-about {
       grid-column: full-start / full-end;
-      border-radius: 0; } }
+      border-radius: 0;
+      background-image: url(../../assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+      background-size: initial;
+      background-position: 99% -95%;
+      background-blend-mode: normal;
+      background-repeat: no-repeat; } }
   .section-hero-about__text-box {
     display: grid;
     place-content: center; }
@@ -546,11 +568,11 @@ body {
     padding: 0 7.5rem 0 9.5rem; }
     @media only screen and (max-width: 62em) {
       .section-hero-about__text {
-        padding: 6.4rem 5.9rem; } }
+        padding: 6.4rem 5.9rem;
+        text-align: center; } }
     @media only screen and (max-width: 34em) {
       .section-hero-about__text {
-        padding: 8rem 2.4rem;
-        text-align: center; } }
+        padding: 8rem 2.4rem; } }
   @media only screen and (max-width: 62em) {
     .section-hero-about__img-box {
       grid-row: 1; } }
@@ -609,14 +631,20 @@ body {
     gap: 2.4rem; }
     @media only screen and (max-width: 62em) {
       .section-talent__description {
-        padding: 6.8rem 5.9rem; } }
+        padding: 6.8rem 5.9rem;
+        text-align: center; } }
     @media only screen and (max-width: 34em) {
       .section-talent__description {
-        padding: 8rem 2.4rem;
-        text-align: center; } }
+        padding: 8rem 2.4rem; } }
 
 .section-locations {
   position: relative; }
+  @media only screen and (max-width: 62em) {
+    .section-locations {
+      row-gap: 8rem; } }
+  @media only screen and (max-width: 34em) {
+    .section-locations {
+      row-gap: 4.8rem; } }
   .section-locations__location {
     display: grid;
     justify-content: center;
@@ -647,7 +675,9 @@ body {
   @media only screen and (max-width: 34em) {
     .section-real {
       grid-column: full-start / full-end;
-      border-radius: 0; } }
+      border-radius: 0;
+      background-image: url(../../assets/shared/desktop/bg-pattern-three-circles.svg);
+      background-position: left bottom; } }
   .section-real__text-box {
     display: grid;
     place-items: center; }
@@ -657,11 +687,11 @@ body {
     gap: 2.4rem; }
     @media only screen and (max-width: 62em) {
       .section-real__text {
-        padding: 6.8rem 5.9rem 9.4rem; } }
+        padding: 6.8rem 5.9rem 9.4rem;
+        text-align: center; } }
     @media only screen and (max-width: 34em) {
       .section-real__text {
-        padding: 8rem 2.4rem 10.5rem;
-        text-align: center; } }
+        padding: 8rem 2.4rem 10.5rem; } }
   @media only screen and (max-width: 62em) {
     .section-real picture {
       grid-row: 1; } }
@@ -684,15 +714,37 @@ body {
   background-repeat: no-repeat; }
   @media only screen and (max-width: 62em) {
     .section-hero-contact {
-      grid-template-columns: 1fr; } }
+      grid-template-columns: 1fr;
+      row-gap: 3.5rem;
+      background-position: -227% -122%; } }
+  @media only screen and (max-width: 34em) {
+    .section-hero-contact {
+      grid-column: full-start / full-end;
+      border-radius: 0;
+      background-image: url(../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg);
+      background-size: initial;
+      background-position: 21% top; } }
   .section-hero-contact__text-box {
     display: grid;
     align-items: center; }
   .section-hero-contact__text {
     padding: 0 9.5rem; }
+    @media only screen and (max-width: 62em) {
+      .section-hero-contact__text {
+        padding: 7.8rem 5.8rem 0; } }
+    @media only screen and (max-width: 34em) {
+      .section-hero-contact__text {
+        padding: 7rem 2.4rem 0;
+        text-align: center; } }
 
 .section-locations-alt {
   position: relative; }
+  @media only screen and (max-width: 62em) {
+    .section-locations-alt {
+      row-gap: 8rem; } }
+  @media only screen and (max-width: 34em) {
+    .section-locations-alt {
+      row-gap: 4.8rem; } }
   .section-locations-alt__location {
     display: grid;
     justify-content: center;
@@ -959,7 +1011,8 @@ body {
     #mapAustralia,
     #mapUk {
       height: 32rem;
-      border-radius: 0; } }
+      border-radius: 0;
+      grid-row: 1; } }
 
 .section-hero--alt {
   grid-column: center-start / center-end;
